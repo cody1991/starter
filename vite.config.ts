@@ -1,15 +1,15 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 
-import { resolve } from 'path'
+import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src')
-    }
+      '@': resolve(__dirname, 'src'),
+    },
   },
   base: './', // 设置打包路径
   server: {
@@ -21,9 +21,8 @@ export default defineConfig({
         target: 'http://xxx.xxx.xxx.xxx:8000',
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => path.replace('/api/', '/')
-      }
-    }
-  }
-
-})
+        rewrite: (path) => path.replace('/api/', '/'),
+      },
+    },
+  },
+});
