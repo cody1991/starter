@@ -1,10 +1,12 @@
 <template>
-  <el-col>
-    <router-view></router-view>
-  </el-col>
-  <el-col class="logo">
-    <img alt="Vue logo" src="./assets/logo.png" />
-  </el-col>
+  <div>
+    <el-col>
+      <router-view></router-view>
+    </el-col>
+    <el-col class="logo">
+      <img alt="Vue logo" src="./assets/logo.png" />
+    </el-col>
+  </div>
 </template>
 
 <script lang="ts">

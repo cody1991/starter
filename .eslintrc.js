@@ -11,5 +11,24 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['vue', '@typescript-eslint'],
-  rules: {},
+  rules: {
+    'no-console': 'off',
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: ['state'],
+      },
+    ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+  },
 };
