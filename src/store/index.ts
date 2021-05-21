@@ -10,7 +10,7 @@ export default createStore({
   },
   mutations: {
     increment(state: typeof defaultState) {
-      state.count++;
+      state.count += 1;
     },
   },
   actions: {
@@ -19,7 +19,7 @@ export default createStore({
     },
   },
   getters: {
-    double(state: typeof defaultState) {
+    double() {
       return 2 * defaultState.count;
     },
   },
