@@ -1,5 +1,7 @@
 <template>
-  <router-view></router-view>
+  <el-col>
+    <router-view></router-view>
+  </el-col>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
 </template>
